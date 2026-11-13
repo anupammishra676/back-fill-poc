@@ -1,0 +1,14 @@
+command:
+  - streamlit
+  - run
+  - streamlit_app/app.py
+
+env:
+  - name: STREAMLIT_GATHER_USAGE_STATS
+    value: "false"
+
+  - name: OPENAI_API_KEY
+    valueFrom: openai-api-key
+
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
